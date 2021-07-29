@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hestabit_HelloWorld::helloworld" title="Hello World" module="Hestabit_HelloWorld" sortOrder="51" resource="Hestabit_HelloWorld::helloworld"/>
+        <add id="Hestabit_HelloWorld::post" title="Manage Posts" module="Hestabit_HelloWorld" sortOrder="10" action="Hestabit_helloworld/post" resource="Hestabit_HelloWorld::post" parent="Hestabit_HelloWorld::helloworld"/>
+        <add id="Hestabit_HelloWorld::hello_configuration" title="Configuration" module="Hestabit_HelloWorld" sortOrder="99" parent="Hestabit_HelloWorld::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Hestabit_HelloWorld::helloworld_configuration"/>
+    </menu>
+</config>
